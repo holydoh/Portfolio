@@ -1,7 +1,7 @@
 /* Déclaration des variables */
 :root {
-    --principal: #DCD5C3;
-    --secondaire: #F2F0ED;
+    --principal: #d8d0c7;
+    --secondaire: #f5f3f1;
     --btp: #2464AF70;
     --env: #078C0365;
     --data: #ffa23890;
@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: Quicksand, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -30,7 +30,7 @@ h1 {
 
 .sous_titre {
     font: italic;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 0; /* Réduit la marge en bas du titre */
 }
@@ -39,8 +39,8 @@ nav {
     background-color: var(--secondaire);
     display: flex;
     flex-wrap: wrap;
-    border-block-end: 1px solid gray; /* Optionnel : ajoute une bordure à la photo */
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5), 0 0 0 rgba(0, 0, 0, 0.05); /* Ajoute deux ombres */
+    border-block-end: 0px solid gray; /* Ajoute une bordure */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), 0 0 0 rgba(0, 0, 0, 0.05); /* Ajoute deux ombres */
 }
 nav a {
     color: black;
