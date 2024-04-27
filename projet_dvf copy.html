@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Noto+Sans'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bonjour.</h1>
+        <p class="sous_titre">
+            Je suis Olivia, bienvenue sur mon portfolio. Découvrez mon profil et certaines de mes compétences !
+        </p>
+    </header>
+
+    <nav>
+        <div class="left_items">
+            <a href="index.html">Accueil</a> <!-- Lien vers la page d'accueil -->
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Projets</a> <!-- Bouton du menu déroulant -->
+                <div class="dropdown_content">
+                    <a href="projet_dvf.html">Prédiction de valeurs foncières</a> <!-- Lien vers la page Projet 1 -->
+                    <a href="projet_aqua.html">Conception d'une serre aquaponique</a> <!-- Lien vers la page Projet 3 -->
+                    <a href="projet_salles.html">Application de réservation de salles</a> <!-- Lien vers la page Projet 2 -->
+                </div>
+            </div>
+            <a href="#">Contact</a> <!-- Lien vers la page de contact -->
+        </div>
+        <div class="social_links ">
+            <a href="mailto:dorol.olivia@gmail.com">
+                <img src="images/logo_gmail.jpeg" alt="Gmail">
+            </a>
+            <a href="https://www.linkedin.com/in/olivia-dorol/">
+                <img src="images/logo_lk.jpeg" alt="Linkedin">
+            </a>
+            <a href="https://github.com/holydoh?tab=repositories">
+                <img src="images/logo_github.jpeg" alt="GitHub">
+            </a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="page_projet">
+
+            <div class="projet_introduction">
+                <div class="projet_titre">
+                    <h2>
+                        Prédiction de valeurs foncières
+                    </h2>
+                    <div class="domaine_list">
+                        <div class="domaine domaine_data">
+                            DATA
+                        </div>
+                        <div class="domaine domaine_btp">
+                            BTP
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    À partir des données anonymisé des
+                    <a href="https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/"
+                    target="_blank"
+                    title="Transactions immobilières publiées et produites par la DGFiP sur le territoire métropolitain et les DOM-TOM, à l’exception de l’Alsace, de la Moselle et de Mayotte. Les données sont issues des actes notariés et des informations cadastrales.">
+                    Demandes de Valeurs Foncières (DVF)</a>,
+                    on explore, segmente et prédis les valeurs foncières.
+                </p>
+                <h3>
+                    Compétences
+                </h3>
+                <div class="competence_list">
+                    <div class="competence domaine_btp">
+                        Bibliographie
+                    </div>
+                    <div class="competence domaine_data">
+                        Préparation d'un jeu de données anonymisé
+                    </div>
+                    <div class="competence domaine_data">
+                        Collecte de données à partir d'une connexion API
+                    </div>
+                    <div class="competence domaine_data">
+                        Analyse de données
+                    </div>
+                    <div class="competence domaine_data">
+                        Développement d'un algorithme par apprentissage automatique
+                    </div>                        <!-- Ajoutez d'autres éléments ici -->
+                </div>
+            </div>
+
+            <section class="projet_chapitre_section">
+                <div class="projet_chapitre_entete">
+                    <div class="projet_chapitre_icone">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                    </div>
+                    <div class="projet_chapitre_titre">
+                        Exploration des transactions immobilières
+                    </div>
+                </div>
+                <div class="projet_chapitre_contenu">
+                    La préparation du jeu de données montre qu'une mutation immobilière peut se décomposer en plusieurs surfaces et contrats.
+                    Avec l'exploration nous quantifions et qualifions la qualité de nos données, et nous en apprenons plus en la croisant à d'autres jeux de données.
+                    La segmentation nous permet d'identifier différents groupes dans notre jeu de données, afin de réaliser des classifications.
+            </div>
+            </section>
+
+            <section class="projet_chapitre_section">
+                <div class="projet_chapitre_entete">
+                    <div class="projet_chapitre_icone">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                    </div>
+                    <div class="projet_chapitre_titre">
+                        Prédiction du prix d'un bien
+                    </div>
+                </div>
+                <div class="projet_chapitre_contenu">
+                    Enfin, pour le développement d'un algorithme par apprentissage automatique, on éprouve les résultats de plusieurs indicateurs et méthodes, avant de mettre l'algorithme en production.
+                </div>
+            </section>
+                                                                                                                                                      
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2024 Olivia Dorol
+        </p>
+    </footer>
+
+</body>
+
+</html>
