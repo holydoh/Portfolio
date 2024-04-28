@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script> <!-- Utilisation de "defer" pour s'assurer que le script est exécuté après le chargement du DOM -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
@@ -32,15 +32,16 @@
                         J'ai été diplômé d'un DUT en génie civil en 2020 et d'une licence en génie géomatique en 2021.
                         <br>
                         J’ai aussi eu l’occasion de développer des compétences en informatique, notamment en machine learning et en développement d'applications,
-                        en tant que cheffe de projets en systèmes d'informations au Conseil départemental de la Gironde, et en tant que développeuse d’applications chez Facildata l'application pour le bâtiment connecté.
-                    </p>
-                    <p>
+                        en tant que cheffe de projets en systèmes d'informations au Conseil départemental de la Gironde
+                        et en tant que freelance.
                         Avec mes formations et mes expériences, j'ai développé un profil pluridisciplinaire en essayant d'allier compétences techniques et numériques.
-                        <br>
-                        Je suis à l'écoute d'opportunités professionnelles dans les secteurs de l'aménagement, de l'environnement ou de l'agriculture. Pour de nouvelles collaborations passionnantes, ponctuelles ou à long terme.
                     </p>
                     <p>
-                        Explorez mon portfolio pour découvrir davantage mon profil et mes compétences !
+                        Aujourd'hui je suis à l'écoute d'opportunités professionnelles dans les secteurs de l'aménagement, de l'environnement ou de l'agriculture.
+                        Pour de nouvelles collaborations passionnantes, ponctuelles ou à long terme.
+                    </p>
+                    <p>
+                        Explorez mon portfolio pour découvrir davantage mon profil et mes compétences.
                     </p>
                 </div>
             </div>
@@ -52,7 +53,7 @@
         <div id="projets" class="projet_section">
             <div class="projet_carte">
                 <h3 class="projet_carte_titre">
-                    <a href="projet_dvf.html">
+                    <a id="lien_projet1" href="">
                         Prédiction de valeurs foncières
                     </a>
                 </h3>
@@ -69,15 +70,15 @@
                     on explore, segmente et prédit les valeurs foncières.
                 </div>
                 <div class="projet_image">
-                    <a href="projet_salle.html">
+                    <a href="projet_dvf.html">
                         <img src="images/Img.jpeg" alt="Projet 1">
                     </a>
                 </div>
             </div>
             <div class="projet_carte">
                 <h3 class="projet_carte_titre">
-                    <a href="projet_aqua.html">
-                        Conception d'une serre aquaponique
+                    <a id="lien_projet2" href="#">
+                    Conception d'une serre aquaponique
                     </a>
                 </h3>
                 <div class="domaine_list">
@@ -114,7 +115,7 @@
                     Programmé en Golang
                 </div>
                 <div class="projet_image">
-                    <a href="projet_reserv.html">
+                    <a href="projet_salle.html">
                         <img src="images/Img.jpeg" alt="Projet 1">
                     </a>
                 </div>
