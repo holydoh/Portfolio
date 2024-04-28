@@ -51,6 +51,3 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("lien_projet1").href = projet1;
 document.getElementById("lien_projet2").href = projet2;
 document.getElementById("lien_projet3").href = projet3;
-document.getElementById("lien_img_projet1").href = projet1;
-document.getElementById("lien_img_projet2").href = projet2;
-document.getElementById("lien_img_projet3").href = projet3;
