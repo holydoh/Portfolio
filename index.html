@@ -1,132 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> <!-- Utilisation de "defer" pour s'assurer que le script est exécuté après le chargement du DOM -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Noto+Sans'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | [Ton Nom]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+      color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 700px;
+      padding: 2rem;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      white-space: nowrap;
+      border-right: 3px solid #00adb5;
+      width: 0;
+      overflow: hidden;
+      animation: typing 3s steps(25, end) forwards, blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent }
+      50% { border-color: #00adb5 }
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #d0d0d0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      background: #00adb5;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00cfcf;
+      transform: scale(1.05);
+    }
+
+    .icons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .icons a {
+      color: #f5f5f5;
+      font-size: 1.6rem;
+      transition: 0.3s ease;
+    }
+
+    .icons a:hover {
+      color: #00adb5;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/yourkey.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <div class="container">
+    <h1>🚧 Portfolio en cours 🚧</h1>
+    <p>Je construis actuellement mon portfolio autour de mes projets en data science, BTP et environnement.<br>
+    Revenez bientôt pour découvrir mes réalisations !</p>
 
-    <div id="header"></div>
+    <a href="mailto:email@example.com" class="btn">Me contacter</a>
 
-    <main>
-        <section>
-            <div class="introduction">
-                <img src="images/profil.jpeg" alt="profil" class="pp">
-                <div class="propos">
-                    <h2>À propos de moi</h2>
-                    <p>
-                        J'ai été diplômé d'un DUT en génie civil en 2020 et d'une licence en génie géomatique en 2021.
-                        <br>
-                        J’ai aussi eu l’occasion de développer des compétences en informatique, notamment en machine learning et en développement d'applications,
-                        d'abord en tant que cheffe de projets en systèmes d'informations au Conseil départemental de la Gironde,
-                        puis en tant que freelance sur des projets privés.
-                        <br>
-                        Avec mes formations et mes expériences, j'ai développé un profil pluridisciplinaire en essayant d'allier des compétences techniques et numériques.
-                    </p>
-                    <p>
-                        Aujourd'hui je suis à l'écoute d'opportunités professionnelles dans les secteurs de l'aménagement, de l'environnement ou de l'agriculture.
-                        Pour de nouvelles collaborations passionnantes, ponctuelles ou à long terme.
-                    </p>
-                    <p>
-                        Explorez mon portfolio pour découvrir davantage mon profil et mes compétences.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section_cv">
-        </section>
-
-        <div id="projets" class="projet_section">
-            <div class="projet_carte">
-                <h3 class="projet_carte_titre">
-                    <a id="lien_projet1" href="">
-                        Prédiction de valeurs foncières
-                    </a>
-                </h3>
-                <div class="domaine_list">
-                    <div class="domaine domaine_data">
-                        DATA
-                    </div>
-                    <div class="domaine domaine_btp">
-                        BTP
-                    </div>
-                </div>
-                <div class="projet_texte">
-                    À partir des données anonymisées des demandes de valeurs foncières, 
-                    on explore, segmente et prédit les valeurs foncières.
-                </div>
-                <div class="projet_image">
-                    <a href="projet_dvf.html">
-                        <img src="images/Img.jpeg" alt="Projet 1">
-                    </a>
-                </div>
-            </div>
-            <div class="projet_carte">
-                <h3 class="projet_carte_titre">
-                    <a id="lien_projet2" href="#">
-                    Conception d'une serre aquaponique
-                    </a>
-                </h3>
-                <div class="domaine_list">
-                    <div class="domaine domaine_btp">
-                        BTP
-                    </div>
-                    <div class="domaine domaine_env">
-                        ENV
-                    </div>
-                </div>
-                <div class="projet_texte">
-                    Pour abriter un système de production agricole
-                    qui unit la culture de plantes et l'élevage de poissons,
-                    avec l'enjeu de maintenir des apports solaires et des besoins thermiques constants.
-                </div>
-                <div class="projet_image">
-                    <a href="projet_aqua.html">
-                        <img src="images/Img.jpeg" alt="Projet 1">
-                    </a>
-                </div>
-            </div>
-            <div class="projet_carte">
-                <h3 class="projet_carte_titre">
-                    <a href="projet_salle.html">
-                        Application de réservation de salles
-                    </a>
-                </h3>
-                <div class="domaine_list">
-                    <div class="domaine domaine_dev">
-                        DEV
-                    </div>
-                </div>
-                <div class="projet_texte">
-                    Conception, développement, et déploiement d'une application de réservation des salles de réunion au sein d'une organisation (fictive).
-                </div>
-                <div class="projet_image">
-                    <a href="projet_salle.html">
-                        <img src="images/Img.jpeg" alt="Projet 1">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <div id="footer"></div>
-
+    <div class="icons">
+      <a href="https://github.com/tonprofil" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tonprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
 </body>
-
 </html>
